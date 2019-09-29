@@ -1,0 +1,67 @@
+data creation finished
+emote class names:  ['boring', 'funny', 'happy', 'mock', 'sad', 'spam', 'surprise', 'undefined']
+
+Using TFIDF-Bag of word features
+training set shape:  (997773, 282421) 997773
+testing set shape:  (665182, 282421) 665182
+
+Linear SVM :
+train time: 57.172s
+test time: 0.082s
+precision: 0.800
+recall: 0.800
+f1: 0.800
+
+class precision recall f1 support
+boring 0.794 0.594 0.680 9159
+funny 0.807 0.598 0.687 69491
+happy 0.778 0.631 0.697 45552
+mock 0.780 0.948 0.856 323285
+sad 0.797 0.634 0.706 34784
+spam 0.928 0.862 0.894 67025
+surprise 0.735 0.555 0.633 64372
+undefined 0.892 0.669 0.765 51514
+
+top features:
+boring:
+[100k cs] [ynk no] [money silver] [the analysis] [forsended forsended] [aizy king] [casters na] [old in] [ot triple] [game cs]
+
+funny:
+[already what] [funny hahaa] [lilman died] [sense on] [free sk] [niko fake] [coldzera no] [na died] [eyes my] [help chrisj]
+
+happy:
+[chrisjmouz chrisjhype] [subs poggers] [olof where] [nacs na] [round one] [are best] [bad not] [uptime is] [cs austrian] [aussie oi]
+
+mock:
+[tarik for] [win ezz] [nifty vac] [years c9] [hello c9] [viewers worst] [here miss] [avicii what] [help spam] [belly huge]
+
+sad:
+[dead boys] [polish check] [again choke] [ethan face] [help side] [buy force] [show knife] [babyrage] [team time] [this eu]
+
+spam:
+[g2 less] [make mouz] [naf subs] [mouz spam] [aizy btw] [the list] [orc] [usa united] [mice to] [raid dog]
+
+surprise:
+[freesado freesado] [winning full] [bars in] [as pokemon] [polish talent] [c9 let] [emote for] [era tournament] [noise for] [chrisjhype chrisjmouz]
+
+undefined:
+[cs chinese] [when say] [help scream] [2018 forsen] [votekick karrigan] [crowd austria] [olof bring] [weeb can] [real weeb] [problem seized]
+
+
+Multinomial Naive Bayes,"Multi-layer Perception" :
+train time: 0.895s
+test time: 0.086s
+precision: 0.713
+recall: 0.713
+f1: 0.713
+
+class precision recall f1 support
+boring 0.897 0.151 0.259 9159
+funny 0.717 0.449 0.552 69491
+happy 0.816 0.386 0.524 45552
+mock 0.669 0.970 0.791 323285
+sad 0.879 0.336 0.486 34784
+spam 0.921 0.779 0.844 67025
+surprise 0.709 0.365 0.481 64372
+undefined 0.885 0.454 0.600 51514
+
